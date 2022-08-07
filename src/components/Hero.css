@@ -1,0 +1,34 @@
+button {
+    position: relative;
+}
+button::after {
+    content: "->";
+    position: absolute;
+    right: 1.4rem;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+button:hover::after{
+    visibility: visible;
+    right: 1rem;
+}
+
+.web__dev {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-10px)
+    }
+}

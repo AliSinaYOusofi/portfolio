@@ -1,0 +1,6 @@
+.skills {
+    transition: all 0.2s ease;
+}
+.skills:hover {
+    box-shadow: 0.5rem 0rem 0.001rem 0.1rem inset rgb(85, 82, 82);
+}
